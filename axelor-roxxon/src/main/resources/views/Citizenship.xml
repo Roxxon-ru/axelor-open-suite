@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<object-views xmlns="http://axelor.com/xml/ns/object-views"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/object-views http://axelor.com/xml/ns/object-views/object-views_5.4.xsd">
+
+  <grid name="citizenship-grid" title="Citizenship" model="com.axelor.apps.base.db.Citizenship"
+    id="roxxon-citizenship-grid" extension="true">
+    <extend target="//field[@name='name']">
+      <insert position="after">
+        <field name="citizenshipGroup" title="Citizenship Group"/>
+      </insert>
+    </extend>
+  </grid>
+
+  <form name="citizenship-form" title="Citizenship" model="com.axelor.apps.base.db.Citizenship"
+    id="roxxon-citizenship-form" extension="true">
+    <extend target="//field[@name='name']">
+      <insert position="after">
+        <field name="citizenshipGroup" title="Citizenship Group"/>
+      </insert>
+    </extend>
+  </form>
+
+</object-views>
